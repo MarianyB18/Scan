@@ -24,7 +24,7 @@ button {
 
 body {
    background-color: var(--background-primary-color);
-  
+
 }
 
 header {
@@ -35,18 +35,37 @@ header {
    align-items: center;
    flex-direction: row;
    justify-content: space-between;
+   position: relative;
 }
 
 header img {
-  
+
    width: 120px;
    height: auto;
 }
 
-input[type="checkbox"]:checked ~ nav{
+input[type="checkbox"]:checked~nav {
    display: block;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   width: 100%;
+   background-color: var(--color-four);
+
 }
 
-nav{
+nav {
    display: none;
+
+}
+
+.list-nav li {
+   list-style: none;
+   font-size: 20px;
+   margin: 16px 0;
+}
+
+.list-nav a {
+   text-decoration: none;
+   color: var(--background-primary-color);
 }
