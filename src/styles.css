@@ -1,0 +1,104 @@
+:root {
+   --background-primary-color: #000000;
+   --color-duo: #14213d;
+   --color-three: #fca311;
+   --color-four: #e5e5e5;
+   --text-color: #ffffff;
+}
+
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: var(--background-primary-color);
+
+}
+
+header {
+   width: 100%;
+   height: 128px;
+   background-color: var(--color-four);
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+   justify-content: space-between;
+   position: relative;
+}
+
+header img {
+
+   width: 120px;
+   height: auto;
+}
+
+
+input[type="checkbox"]:checked~nav {
+   display: block;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   width: 100%;
+   background-color: var(--color-four);
+
+}
+
+nav {
+   display: none;
+
+}
+
+.list-nav li {
+   list-style: none;
+
+   margin: 16px 0;
+}
+
+.list-nav a {
+   text-decoration: none;
+   color: var(--background-primary-color);
+   font-weight: 700;
+   font-size: 20px;
+}
+
+
+@media screen and (min-width: 1024px){
+
+header{
+   padding: 30px;
+}
+
+.menu{
+   width: 467px;
+}
+
+  .menu label{
+      display: none;
+   }
+
+   .menu ul{
+      display: flex;
+      align-items: center;
+      gap: 50px;
+   }
+
+   .menu nav{
+      display: block;
+   }
+
+   .menu li a:hover{
+      color:var(--color-three);
+      
+   }
+}
+
+@media screen and (min-width: 1920px){
+     
+header{
+   padding: 38px 160px ;
+}
+
+   }
