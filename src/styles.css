@@ -75,6 +75,23 @@ nav {
 
 }
 
+.hero h2 {
+   font-size: 30px;
+   text-align: center;
+   color: var(--text-color);
+   margin-top: 30px;
+
+}
+
+.hero p {
+   color: var(--text-color);
+   text-align: center;
+   margin-top: 10px;
+   font-size: 20px;
+   padding: 0 40px; 
+  
+}
+
 @media screen and (min-width: 1024px) {
 
    header {
