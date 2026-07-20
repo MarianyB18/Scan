@@ -96,6 +96,7 @@ nav {
 }
 
 
+
 .title {
    margin-top: 60px;
 }
@@ -116,65 +117,195 @@ hr {
    margin: auto;
 }
 
-.cards{
+.cards {
    display: flex;
    flex-direction: column;
    align-items: center;
    flex-wrap: wrap;
    justify-content: center;
-   gap: 30px;
+   gap: 24px;
+   margin-top: 40px;
+
 }
 
-.hea-card{
-   display:block;
+.hea-card {
+   display: block;
    font-size: 28px;
    text-align: center;
    color: var(--text-color);
    font-weight: bold;
    text-shadow: 2px 2px 8px #fca311;
-   margin-bottom: 50px;
+   margin-bottom: 40px;
+
 
 
 }
 
-.cart{
+.cart {
    background-image: url(../img/calendar.jpg);
+   background-position: center;
    width: 300px;
    background-size: cover;
    height: 280px;
    border-radius: 20px;
-   
-  
+
+
 }
 
-.books{
+.books {
    background-image: url(../img/books.jpg);
+   background-size: cover;
+
+}
+
+.news {
+   background-image: url(../img/news.jpg);
    background-size: cover;
 }
 
-.news{
-   background-image: url(../img/news.jpg);
-    background-size: cover;
+.cont {
+   background-image: url(../img/contato.jpg);
+   background-size: cover;
 }
 
-.foo-card{
+
+
+.foo-card {
    text-align: center;
+
 }
 
-.foo-card a{
+.foo-card a {
    display: inline-block;
    width: 200px;
    background-color: var(--color-three);
    border-radius: 14px;
    text-decoration: none;
    color: var(--background-primary-color);
+   color: var(--text-color);
    padding: 20px;
    font-size: 20px;
+   margin-top: 20px;
+}
+
+.des-prin {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
+   gap: 28px;
+   margin-top: 20px;
+
+
+}
+
+.principais {
+   display: block;
+   max-width: 500px;
+   width: 90%;
+   height: 920px;
+   background-color: var(--color-three);
+   margin-top: 20px;
+   border-radius: 14px;
+
+
+}
+
+.hea-des {
+   display: block;
+   width: 100%;
+   padding: 20px;
+
 }
 
 
+.hea-des h4 {
+   margin-top: 10px;
+   text-align: center;
+   font-size: 30px;
 
-@media screen and (min-width: 1024px) {
+}
+
+.hea-des p {
+   margin-top: 20px;
+   font-weight: 500;
+   font-size: 20px;
+
+}
+
+.hea-des span {
+   color: var(--color-duo);
+   font-weight: 700;
+   font-size: 20px;
+}
+
+.foo-des {
+   text-align: center;
+}
+
+.foo-des a {
+   display: inline-block;
+   width: 200px;
+   background-color: var(--color-duo);
+   border-radius: 14px;
+   text-decoration: none;
+   color: var(--text-color);
+   padding: 20px;
+   font-size: 20px;
+ 
+   margin-bottom: 10px;
+
+}
+
+.des-img {
+   display: block;
+   height: 300px;
+   background-image: url(../img/progrmer.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   border-radius: 18px;
+
+
+}
+
+.writter {
+   background-image: url(../img/writter.jpg);
+   background-position: center;
+   display: block;
+   height: 300px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   border-radius: 18px;
+}
+
+@media screen and (min-width: 375px) {
+   
+.des-prin {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
+   gap: 28px;
+   margin-top: 20px;
+
+
+}
+
+.principais {
+   display: block;
+   max-width: 500px;
+   width: 90%;
+   height: 860px;
+   background-color: var(--color-three);
+   margin-top: 20px;
+   border-radius: 14px;
+
+
+}
+}
+
+
+@media screen and (min-width: 768px) {
 
    header {
       padding: 30px;
@@ -208,12 +339,12 @@ hr {
       max-height: 600;
    }
 
-   .foo-card a:hover{
-   background-color: var(--color-duo);
-   color: var(--color-three);
-}
+   .foo-card a:hover {
+      background-color: var(--color-duo);
+      color: var(--color-three);
+   }
 
-   .cards{
+   .cards {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -222,20 +353,158 @@ hr {
       gap: 30px;
    }
 
-   .cart{
-      width: 230px ;
+   .cart {
+      width: 280px;
       height: 230px;
    }
+
+   .des-prin {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      width: 100%;
+      gap: 28px;
+      flex-wrap: wrap;
+
+
+   }
+
+   .principais {
+      display: block;
+      max-width: 600px;
+      width: 90%;
+      height: 700px;
+      background-color: var(--color-three);
+      margin-top: 20px;
+      border-radius: 14px;
+
+
+   }
+
+   .foo-des a {
+   display: inline-block;
+   width: 300px;
+   background-color: var(--color-duo);
+   border-radius: 14px;
+   text-decoration: none;
+   color: var(--text-color);
+   padding: 28px;
+   font-size: 28px;
+   margin-top: 20px;
+   margin-bottom: 10px;
 }
 
-@media screen and (min-width: 1920px) {
+
+
+}
+
+@media screen and (min-width: 1024px) {
+   .cart {
+      width: 400px;
+      height: 280px;
+   }
+
+     .des-prin {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      width: 100%;
+      gap: 28px;
+      flex-wrap: wrap;
+
+   }
+
+   .principais {
+      display: block;
+      max-width: 400px;
+      width: 90%;
+      height: 820px;
+      background-color: var(--color-three);
+      margin-top: 20px;
+      border-radius: 14px;
+   }
+
+   .foo-des a {
+   display: inline-block;
+   width: 300px;
+   background-color: var(--color-duo);
+   border-radius: 14px;
+   text-decoration: none;
+   color: var(--text-color);
+   padding: 28px;
+   font-size: 24px;
+   margin-top: 20px;
+   margin-bottom: 10px;
+}
+}
+
+
+@media screen and (min-width: 1280px) {
 
    header {
       padding: 38px 160px;
    }
-   
-   .cart{
-        width: 400px; 
-        height: 300px;
+
+   .cart {
+      width: 600px;
+      height: 300px;
    }
+
+   .principais {
+      display: block;
+      max-width: 600px;
+      width: 90%;
+      height: 720px;
+      background-color: var(--color-three);
+      margin-top: 20px;
+      border-radius: 14px;
+   }
+
+   .des-prin {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      width: 100%;
+      gap: 28px;
+      flex-wrap: wrap;
+
+
+   }
+
+   .hea-des h4 {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 32px;
+
+   }
+
+   .hea-des p {
+      margin-top: 20px;
+      font-weight: 500;
+      font-size: 20px;
+   }
+
+   .hea-des span {
+      font-size: 20px;
+      color: var(--color-duo);
+      font-weight: 700;
+   }
+
+   .foo-des a {
+   display: inline-block;
+   width: 300px;
+   background-color: var(--color-duo);
+   border-radius: 14px;
+   text-decoration: none;
+   color: var(--text-color);
+   padding: 28px;
+   font-size: 22px;
+   margin-top: 20px;
+  
+
+}
+
+
+
+     
 }
