@@ -1,0 +1,313 @@
+:root {
+    --background-primary-color: #000000;
+    --color-duo: #14213d;
+    --color-three: #fca311;
+    --color-four: #e5e5e5;
+    --text-color: #ffffff;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-primary-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    margin: 0 auto;
+
+}
+
+.inicio {
+    width: 100%;
+    height: 128px;
+    background-color: var(--color-four);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.inicio img {
+
+    width: 120px;
+    height: auto;
+  
+}
+
+
+input[type="checkbox"]:checked~nav {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-four);
+
+}
+
+nav {
+    display: none;
+
+}
+
+.list-nav li {
+    list-style: none;
+
+    margin: 16px 0;
+}
+
+.list-nav a {
+    text-decoration: none;
+    color: var(--background-primary-color);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.title {
+    margin-top: 60px;
+}
+
+.title h2 {
+    font-size: 32px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+hr {
+    width: 180px;
+    height: 4px;
+    background-color: var(--color-three);
+    border: none;
+    margin: auto;
+}
+
+.hero-img {
+    background: url(../img/hero3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 450px;
+    display: block;
+
+}
+
+.foo-des {
+    text-align: center;
+    margin: 10px 40px;
+}
+
+.foo-des p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+
+}
+
+.foo-des span {
+    color: var(--color-three);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.my-bibli {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+.biblioteca {
+    display: block;
+    max-width: 500px;
+    width: 94%;
+    height: 880px;
+    max-height: 900px;
+    background-color: var(--color-three);
+    margin-top: 20px;
+    border-radius: 14px;
+    margin-bottom: 40px;
+}
+
+.bibli-img {
+    display: block;
+    height: 300px;
+    background-image: url(../img/progrmer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 18px;
+    margin: 20px;
+  
+
+}
+
+.hea-bibli{
+    display: block;
+    width: 100%;
+    padding: 20px;
+}
+
+.hea-bibli h4 {
+  
+   text-align: center;
+   font-size: 30px;
+
+}
+
+.hea-bibli p {
+   margin-top: 20px;
+   font-weight: 500;
+   font-size: 20px;
+   text-align: center;
+
+}
+
+.hea-bibli span {
+   color: var(--color-duo);
+   font-weight: 700;
+   font-size: 20px;
+}
+
+.foo-bibli {
+   text-align: center;
+}
+
+.foo-bibli a {
+   display: inline-block;
+   width: 200px;
+   background-color: var(--color-duo);
+   border-radius: 14px;
+   text-decoration: none;
+   color: var(--text-color);
+   padding: 20px;
+   font-size: 20px;
+   margin-bottom: 10px;
+
+}
+
+.final {
+   background-color: var(--color-four);
+   width: 100%;
+   height: 200px;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+}
+
+
+.foo p {
+   color: var(--color-duo);
+   font-size: 20px;
+   padding: 10px 10px;
+   font-weight: 700;
+}
+
+.foo span {
+   color: var(--color-three);
+   font-weight: 800;
+   font-size: 20px;
+   padding: 10px 10px;
+
+}
+
+.foo2 {
+   text-align: center;
+   color: var(--color-duo);
+   font-size: 20px;
+   font-weight: 700;
+   margin-top: 20px;
+
+}
+
+.foo2 p {
+   padding: 20px;
+}
+
+.foo2 i {
+   padding-bottom: 30px;
+   font-size: 30px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    header {
+        padding: 30px;
+    }
+
+    .menu {
+        width: 467px;
+    }
+
+    .menu label {
+        display: none;
+    }
+
+    .menu ul {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .menu nav {
+        display: block;
+    }
+
+    .menu li a:hover {
+        color: var(--color-three);
+
+    }
+
+    .my-bibli {
+     display: grid;
+     grid-template-columns: repeat(2, minmax(0, 500px));
+    justify-items:center ;
+     gap: 24px;
+     
+   }
+
+  .foo-bibli a{
+    width: 300px;
+    padding: 20px;
+    
+ }
+   
+
+   .foo-bibli a:hover {
+      background-color: var(--color-four);
+      color: var(--color-three);
+   }
+}
+
+@media screen and (min-width: 1024px) {
+   
+    .my-bibli {
+     display: grid;
+     grid-template-columns: repeat(2, minmax(0, 500px));
+    justify-content:center ;
+     gap: 24px;
+     
+   }
+
+
+   .biblioteca {
+    height: 780px;
+    max-height: 840px;
+}
+
+.foo-bibli a{
+    width: 400px;
+    padding: 24px;
+}
+
+
+
+}
