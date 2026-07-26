@@ -13,7 +13,7 @@
 <body>
     <header class="inicio">
 
-        <a href="index.html" title="volte para o início"><img src="../img/logo.png" alt="logo da pagina"></a>
+        <a href="../index.html" title="volte para o início"><img src="../img/logo.png" alt="logo da pagina"></a>
         <div class="menu">
             <label for="menu">
                 <img src="../img/menu-ham,.png" alt="menu hamburguer">
@@ -21,11 +21,11 @@
             <input type="checkbox" id="menu" hidden>
             <nav>
                 <ul class="list-nav">
-                    <li><a href="../index.html" target="_blank" title="Acessar inicio">Início</a></li>
-                    <li><a href="./calendario.html" target="_blank" title="Acessar calendário">Calendário</a></li>
-                    <li><a href="./bibiloteca.html" target="_blank"
-                            title="acessar a página da bibibloteca">Biblioteca</a></li>
-                    <li><a href="./contato.html" target="_blank" title="acessar a página de contato">Contato</a>
+                    <li><a href="../index.html" target="_parent" title="Acessar inicio">Início</a></li>
+                    <li><a href="./calendario.html" target="_parent" title="Acessar calendário">Calendário</a></li>
+                    <li class="active"><a href="./bibiloteca.html" target="_parent"
+                            title="acessar a página da bibibloteca" >Biblioteca</a></li>
+                    <li><a href="./contato.html" target="_parent" title="acessar a página de contato">Contato</a>
                     </li>
                 </ul>
             </nav>
@@ -57,6 +57,7 @@
             </div>
         </header>
     </section>
+   
     <div class="title">
                 <h2>Bem-vindo à sua Biblioteca</h2>
                 <hr>
@@ -79,7 +80,7 @@
             </footer>
         </div>
          <div class="biblioteca">
-            <div class="bibli-img"></div>
+            <div class="bibli-img bookcolor"></div>
             <header class="hea-bibli">
             <h4>O Programador Pragmático</h4>
             <p><span>O Programador Pragmático</span> ilustra as melhores práticas e as principais armadilhas do
@@ -89,7 +90,7 @@
                 satisfação profissional</p>
                 </header>
             <footer class="foo-bibli">
-                <a href="">Ler</a>
+                <a href="../pdfs/Lógica_de_Programação_Crie_seus_primeiros_programas_usando_Javascript.pdf">Ler</a>
             </footer>
         </div>
          <div class="biblioteca">
@@ -117,10 +118,18 @@
                 satisfação profissional</p>
                 </header>
             <footer class="foo-bibli">
-                <a href="">Ler</a>
+                <a href="../pdfs/Lógica_de_Programação_Crie_seus_primeiros_programas_usando_Javascript.pdf" target="_blank">Ler</a>
             </footer>
         </div>
     </section>
+<section class="citacao">
+    <div class="cita-img"></div>
+    <article>
+    <h2>"É preciso que a leitura seja um ato de amor." </h2>
+      <p> — Paulo Freire</p>
+      </article>
+      </section>
+    <div class="footer-bibli-img"></div>
      <footer class="final">
         <header class="foo">
             <p>
