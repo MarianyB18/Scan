@@ -17,6 +17,8 @@ body {
    background-color: var(--background-primary-color);
    color: var(--text-color);
    font-family: sans-serif;
+   font-style: normal;
+
 
 }
 
@@ -29,6 +31,7 @@ body {
    flex-direction: row;
    justify-content: space-between;
    position: relative;
+
 }
 
 .inicio img {
@@ -66,6 +69,13 @@ nav {
    font-size: 20px;
 }
 
+.active {
+   color: var(--color-three);
+   text-decoration: underline;
+}
+
+
+
 .title {
    margin-top: 60px;
 }
@@ -86,6 +96,133 @@ hr {
    margin: auto;
 }
 
+.title p {
+   color: var(--text-color);
+   font-size: 20px;
+   font-weight: 500;
+   text-align: center;
+   margin-top: 30px;
+}
+
+
+.container {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   margin: 0 40px;
+
+}
+
+
+
+form {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   padding: 40px;
+
+
+}
+
+fieldset {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   width: 700px;
+   height: 500px;
+   border-radius: 20px;
+   padding: 20px;
+   border: 1px solid #fca311;
+   box-shadow: 4px 4px 10px #fca311;
+
+}
+
+
+input {
+   border-radius: 10px;
+   width: 100%;
+   margin-top: 18px;
+   height: 30px;
+   padding: 22px;
+   border: 2px solid #000000;
+  
+
+}
+
+input:valid{
+   border: 2px solid green;
+}
+
+input:invalid{
+   border: 2px solid red;
+}
+
+
+textarea {
+   min-height: 180px;
+   border-radius: 20px;
+   padding: 10px;
+   width: 100%;
+   margin-top: 18px;
+
+}
+
+button {
+   background-color: #fca311;
+   width: 300px;
+   padding: 18px;
+   border-radius: 20px;
+   margin: 20px auto;
+   color: var(--text-color);
+   font-size: 20px;
+   font-weight: 700;
+   cursor: pointer;
+
+}
+
+
+.final {
+   background-color: var(--color-four);
+   width: 100%;
+   height: 200px;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+
+}
+
+
+.foo p {
+   color: var(--color-duo);
+   font-size: 20px;
+   padding: 10px 10px;
+   font-weight: 700;
+}
+
+.foo span {
+   color: var(--color-three);
+   font-weight: 800;
+   font-size: 20px;
+   padding: 10px 10px;
+
+}
+
+.foo2 {
+   text-align: center;
+   color: var(--color-duo);
+   font-size: 20px;
+   font-weight: 700;
+   margin-top: 20px;
+
+}
+
+.foo2 p {
+   padding: 20px;
+}
+
+.foo2 i {
+   padding-bottom: 30px;
+   font-size: 30px;
+}
 
 @media screen and (min-width: 768px) {
 
@@ -115,4 +252,29 @@ hr {
       color: var(--color-three);
 
    }
+
+   .title p {
+      font-size: 24px;
+   }
+
+   .container {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 700px));
+      gap: 40px;
+   }
+
+
+   .img-cont {
+      background-image: url(../img/logo.png);
+      background-size: cover;
+      width: 100%;
+      height: 500px;
+
+   }
+
+   button:hover {
+      background-color: var(--color-duo);
+      border: none;
+   }
+
 }

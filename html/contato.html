@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendário</title>
-    <link rel="stylesheet" href="../css/calendario.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/contato.css">
 </head>
 <body>
     <header class="inicio">
@@ -17,22 +18,61 @@
             <input type="checkbox" id="menu" hidden>
             <nav>
                 <ul class="list-nav">
-                    <li><a href="index.html" target="_blank" title="Acessar inicio">Início</a></li>
-                    <li><a href="./html/calendario.html" target="_blank" title="Acessar calendário">Calendário</a></li>
-                    <li><a href="./html/bibiloteca.html" target="_blank" title="acessar a página da bibibloteca">Livros</a></li>
-                    <li><a href="./html/contato.html" target="_blank" title="acessar a página de contato">Contato</a></li>
+                    <li><a href="../index.html"  title="Acessar inicio">Início</a></li>
+                    <li><a href="./calendario.html"  title="Acessar calendário">Calendário</a></li>
+                    <li><a href="./bibiloteca.html"  title="acessar a página da bibibloteca">Biblioteca</a></li>
+                    <li class="active"><a href="./contato.html" title="acessar a página de contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="description">
-        <header class="des">
-            <div class="title">
-            <h2>Sejam Bem-vindos(as)</h2>
+     <div class="title">
+            <h2>Entre em Contato</h2>
             <hr>
-        </div>
-        </header>
+
+        <p>Preencha o formulário abaixo:</p>
+     </div>
+    <section class="container">
+        <div class="img-cont">
+            
+        </div>   
+            
+        
+        <form action="" method="get">
+            <fieldset>
+                <legend></legend>
+               
+                <input type="text" id="userName" name="Username" placeholder="Nome completo:"  required>
+
+              
+                <input type="email" id="userEmail" name="text-email" placeholder="E-mail:" required>
+
+                <input type="tel" name="userTel" id="TelUser" placeholder="DDD+número" pattern="[0-9]{11}" required>
+
+                <textarea name="textComent" id="recomendacao" placeholder="Expresse sua opinião"></textarea>
+                
+               <button type="submit">Enviar</button>
+                
+            </fieldset>
+        </form>
     </section>
+
+     <footer class="final">
+        <header class="foo">
+            <p>
+                Desenvolvido por Mariany Barbosa
+            </p>
+            <span>Projeto fictício para prática</span>
+        </header>
+        <footer class="foo2">
+        <p>Acesse minhas redes</p>
+        <a href="https://www.instagram.com/marianybarbosa?igsh=MXdpcnl6bzhpOWZvbQ==" title="página do instagram" alt="link do instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="www.linkedin.com/in/mariany-barbosa19" title="página do linkedin" alt="link do linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/MarianyB18" title="página do github" alt="link do github" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+</footer>
+    </footer>
 </body>
 </html>
