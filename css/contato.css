@@ -24,12 +24,13 @@ body {
 
 .inicio {
    width: 100%;
+   overflow: hidden;
    height: 128px;
    background-color: var(--color-four);
    display: flex;
    align-items: center;
-   flex-direction: row;
    justify-content: space-between;
+   flex-direction: row;
    position: relative;
 
 }
@@ -58,8 +59,8 @@ nav {
 
 .list-nav li {
    list-style: none;
+   margin: 16px 15px;
 
-   margin: 16px 0;
 }
 
 .list-nav a {
@@ -145,15 +146,15 @@ input {
    height: 30px;
    padding: 22px;
    border: 2px solid #000000;
-  
+
 
 }
 
-input:valid{
+input:valid {
    border: 2px solid green;
 }
 
-input:invalid{
+input:invalid {
    border: 2px solid red;
 }
 

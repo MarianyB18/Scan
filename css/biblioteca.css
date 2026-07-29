@@ -154,7 +154,7 @@ hr {
     margin: 20px;
 }
 
-.bookcolor{
+.bookbbbbcolor{
     background-image: url(../img/book-prog.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -286,7 +286,7 @@ hr {
 
 @media screen and (min-width: 768px) {
 
-    header {
+    .inicio {
         padding: 30px;
     }
 
