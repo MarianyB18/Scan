@@ -1,0 +1,144 @@
+:root {
+    --background-primary-color: #000000;
+    --color-duo: #14213d;
+    --color-three: #fca311;
+    --color-four: #e5e5e5;
+    --text-color: #ffffff;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-primary-color);
+    color: var(--text-color);
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.inicio {
+    width: 100%;
+    height: 128px;
+    background-color: var(--color-four);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.inicio img {
+
+    width: 120px;
+    height: auto;
+}
+
+
+input[type="checkbox"]:checked~nav {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-four);
+
+}
+
+nav {
+    display: none;
+
+}
+
+.list-nav li {
+    list-style: none;
+    margin: 16px 15px;
+}
+
+.list-nav a {
+    text-decoration: none;
+    color: var(--background-primary-color);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.active {
+    color: var(--color-three);
+    text-decoration: underline;
+}
+
+.hero-img {
+    background: url(../img/hero-jornal.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 450px;
+    display: block;
+}
+
+.hero-text {
+    padding: 160px;
+
+}
+
+.hero-text h2 {
+    color: var(--color-three);
+    font-size: 60px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px #000000;
+    text-align: center;
+
+}
+
+.hero-text p {
+    color: var(--text-color);
+    font-size: 23px;
+    text-shadow: 2px 2px 5px #000000;
+    text-align: center;
+
+
+}
+
+.title {
+    margin-top: 60px;
+}
+
+.title h2 {
+    font-size: 32px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+hr {
+    width: 180px;
+    height: 4px;
+    background-color: var(--color-three);
+    border: none;
+    margin: auto;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(4(minmax(0, 400px)));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.arti {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-duo);
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 20px;
+
+}
+
