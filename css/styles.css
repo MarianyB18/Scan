@@ -66,8 +66,8 @@ nav {
 }
 
 .active {
-    color: var(--color-three);
-    text-decoration: underline;
+   color: var(--color-three);
+   text-decoration: underline;
 }
 
 
@@ -193,6 +193,7 @@ hr {
 
 .des-prin {
    display: flex;
+   align-items: stretch;
    align-items: center;
    flex-direction: column;
    width: 100%;
@@ -205,10 +206,12 @@ hr {
 }
 
 .principais {
-   display: block;
+   display: flex;
+
+   flex-direction: column;
    max-width: 500px;
    width: 90%;
-   height: 920px;
+   max-height: 1020px;
    background-color: var(--color-three);
    margin-top: 20px;
    border-radius: 14px;
@@ -220,6 +223,7 @@ hr {
    display: block;
    width: 100%;
    padding: 20px;
+
 
 }
 
@@ -246,6 +250,9 @@ hr {
 
 .foo-des {
    text-align: center;
+   margin-top: auto;
+
+
 }
 
 .foo-des a {
@@ -275,6 +282,26 @@ hr {
 .writter {
    background-image: url(../img/writter.jpg);
    background-position: center;
+   display: block;
+   height: 300px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   border-radius: 18px;
+}
+
+.hello {
+   background-image: url(../img/helloworld.jpg);
+   background-position: center;
+   display: block;
+   height: 300px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   border-radius: 18px;
+}
+
+.cortico {
+   background-image: url(../img/cortiço.png);
+   background-position: top;
    display: block;
    height: 300px;
    background-size: cover;
@@ -383,7 +410,7 @@ hr {
    width: 100%;
    height: 200px;
    display: grid;
-   grid-template-columns: repeat(2,1fr);
+   grid-template-columns: repeat(2, 1fr);
 }
 
 
@@ -440,12 +467,16 @@ hr {
       display: block;
       max-width: 500px;
       width: 90%;
-      height: 860px;
+      max-height: 940px;
       background-color: var(--color-three);
       margin-top: 20px;
       border-radius: 14px;
 
 
+   }
+
+   .foo-des {
+      margin-top: auto;
    }
 }
 
@@ -479,10 +510,10 @@ hr {
 
    }
 
-    .list-nav li {
-    list-style: none;
-    margin: 16px 0;
-}
+   .list-nav li {
+      list-style: none;
+      margin: 16px 0;
+   }
 
    .hero-img {
       min-height: 500;
@@ -523,12 +554,17 @@ hr {
       display: block;
       max-width: 600px;
       width: 90%;
-      height: 700px;
+     
+      max-height: 920px;
       background-color: var(--color-three);
       margin-top: 20px;
       border-radius: 14px;
 
 
+   }
+
+   .foo-des {
+      margin-top: auto;
    }
 
    .foo-des a {
@@ -588,6 +624,11 @@ hr {
       font-weight: 700;
    }
 
+   .h-cal{
+   margin-top: 20px;
+  }
+
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -607,10 +648,10 @@ hr {
    }
 
    .principais {
-      display: block;
+
       max-width: 400px;
       width: 90%;
-      height: 820px;
+      max-height: 940px;
       background-color: var(--color-three);
       margin-top: 20px;
       border-radius: 14px;
@@ -634,7 +675,12 @@ hr {
       width: 50%;
       height: 400px;
    }
+
+  .h-cal{
+   margin-top: 20px;
+  }
 }
+
 
 
 
@@ -650,10 +696,9 @@ hr {
    }
 
    .principais {
-      display: block;
       max-width: 600px;
       width: 90%;
-      height: 720px;
+      max-height: 920px;
       background-color: var(--color-three);
       margin-top: 20px;
       border-radius: 14px;
@@ -689,6 +734,10 @@ hr {
       font-weight: 700;
    }
 
+   .foo-des{
+      margin-top: auto;
+   }
+
    .foo-des a {
       display: inline-block;
       width: 300px;
@@ -703,6 +752,13 @@ hr {
 
    }
 
+   .image-log{
+      height: 520px;
+   }
+   
+   .image-bi , .image-cal, .image-cont {
+      height: 400px;
+   }
 
 
 
