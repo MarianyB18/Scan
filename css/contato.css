@@ -227,9 +227,6 @@ button {
 
 @media screen and (min-width: 768px) {
 
-   header {
-      padding: 30px;
-   }
 
    .menu {
       width: 467px;
@@ -253,6 +250,12 @@ button {
       color: var(--color-three);
 
    }
+
+   
+    .list-nav li {
+        list-style: none;
+        margin: 16px 0;
+    }
 
    .title p {
       font-size: 24px;
@@ -278,4 +281,11 @@ button {
       border: none;
    }
 
+}
+
+@media screen and (min-width: 1280px) {
+
+   header {
+      padding: 38px 160px;
+   }
 }

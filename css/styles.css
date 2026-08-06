@@ -483,12 +483,10 @@ hr {
 
 @media screen and (min-width: 768px) {
 
-   header {
-      padding: 30px;
-   }
 
    .menu {
       width: 467px;
+    
    }
 
    .menu label {
@@ -510,10 +508,11 @@ hr {
 
    }
 
-   .list-nav li {
-      list-style: none;
-      margin: 16px 0;
-   }
+  
+    .list-nav li {
+        list-style: none;
+        margin: 16px 0;
+    }
 
    .hero-img {
       min-height: 500;
@@ -546,6 +545,7 @@ hr {
       width: 100%;
       gap: 28px;
       flex-wrap: wrap;
+      align-items: stretch;
 
 
    }
@@ -644,6 +644,7 @@ hr {
       width: 100%;
       gap: 28px;
       flex-wrap: wrap;
+      align-items: stretch;
 
    }
 
@@ -695,6 +696,18 @@ hr {
       height: 300px;
    }
 
+    .des-prin {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      width: 100%;
+      gap: 28px;
+      flex-wrap: wrap;
+      align-items: stretch;
+
+   }
+
+
    .principais {
       max-width: 600px;
       width: 90%;
@@ -704,17 +717,7 @@ hr {
       border-radius: 14px;
    }
 
-   .des-prin {
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      width: 100%;
-      gap: 28px;
-      flex-wrap: wrap;
-
-
-   }
-
+  
    .hea-des h4 {
       margin-top: 10px;
       text-align: center;
