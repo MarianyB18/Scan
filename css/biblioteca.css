@@ -154,8 +154,20 @@ hr {
     margin: 20px;
 }
 
-.bookbbbbcolor{
+.bookcolor{
     background-image: url(../img/book-prog.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cortico{
+     background-image: url(../img/cortiço.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.arado{
+     background-image: url(../img/arado.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -189,6 +201,7 @@ hr {
 
 .foo-bibli {
     text-align: center;
+    margin-top: 20px;
 }
 
 .foo-bibli a {
@@ -286,12 +299,11 @@ hr {
 
 @media screen and (min-width: 768px) {
 
-    .inicio {
-        padding: 30px;
-    }
+   
 
     .menu {
         width: 467px;
+        
     }
 
     .menu label {
@@ -306,6 +318,7 @@ hr {
 
     .menu nav {
         display: block;
+        
     }
 
     .menu li a:hover {
@@ -400,5 +413,13 @@ hr {
 
 
 
+
+}
+
+@media screen and (min-width: 1280px) {
+
+   header {
+      padding: 38px 160px;
+   }
 
 }
