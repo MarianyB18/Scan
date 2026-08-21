@@ -80,7 +80,11 @@ nav {
 }
 
 .hero-text {
-    padding: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
 
 }
 
@@ -90,12 +94,13 @@ nav {
     font-weight: 700;
     text-shadow: 2px 2px 5px #000000;
     text-align: center;
+    padding-bottom: 10px;
 
 }
 
 .hero-text p {
     color: var(--text-color);
-    font-size: 23px;
+    font-size: 30px;
     text-shadow: 2px 2px 5px #000000;
     text-align: center;
 
@@ -123,18 +128,16 @@ hr {
 }
 
 .news {
-    display: grid;
-    grid-template-columns: repeat(4(minmax(0, 400px)));
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+    margin: 0 40px;
+
 
 }
 
 .arti {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: var(--color-duo);
+
     height: 300px;
     width: 300px;
     margin: 10px;
@@ -142,3 +145,94 @@ hr {
 
 }
 
+.jornal-img {
+    background-image: url(../img/helloworld.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.arti p {
+    font-size: 20px;
+    letter-spacing: 2px;
+
+}
+
+.arti h3 {
+    text-align: center;
+    font-size: 26px;
+    margin-top: 10px;
+
+}
+
+.foo-art {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.ler {
+    background-color: var(--color-three);
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+
+    .menu {
+        width: 467px;
+
+    }
+
+    .menu label {
+        display: none;
+    }
+
+    .menu ul {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .menu nav {
+        display: block;
+    }
+
+    .menu li a:hover {
+        color: var(--color-three);
+
+    }
+
+
+    .list-nav li {
+        list-style: none;
+        margin: 16px 0;
+    }
+
+    .news {
+
+        display: grid;
+      grid-template-columns: repeat(2, minmax(0, 300px));
+    }
+
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    header {
+        padding: 38px 160px;
+    }
+
+
+}

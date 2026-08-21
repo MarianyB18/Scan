@@ -154,8 +154,20 @@ hr {
     margin: 20px;
 }
 
-.bookbbbbcolor{
+.bookcolor{
     background-image: url(../img/book-prog.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cortico{
+     background-image: url(../img/cortiço.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.arado{
+     background-image: url(../img/arado.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -189,6 +201,7 @@ hr {
 
 .foo-bibli {
     text-align: center;
+    margin-top: 20px;
 }
 
 .foo-bibli a {
