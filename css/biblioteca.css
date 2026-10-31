@@ -16,7 +16,7 @@
 body {
     background-color: var(--background-primary-color);
     color: var(--text-color);
-    font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     margin: 0 auto;
 
 }
@@ -133,7 +133,8 @@ hr {
 }
 
 .biblioteca {
-    display: block;
+    display: flex;
+    flex-direction: column;
     max-width: 500px;
     width: 94%;
     height: 880px;
@@ -154,20 +155,20 @@ hr {
     margin: 20px;
 }
 
-.bookcolor{
+.bookcolor {
     background-image: url(../img/book-prog.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.cortico{
-     background-image: url(../img/cortiço.png);
+.cortico {
+    background-image: url(../img/cortiço.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.arado{
-     background-image: url(../img/arado.png);
+.arado {
+    background-image: url(../img/arado.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -176,6 +177,7 @@ hr {
     display: block;
     width: 100%;
     padding: 20px;
+
 }
 
 .hea-bibli h4 {
@@ -200,8 +202,11 @@ hr {
 }
 
 .foo-bibli {
+    display: block;
     text-align: center;
-    margin-top: 20px;
+    margin-top: auto;
+    padding-bottom: 30px;
+
 }
 
 .foo-bibli a {
@@ -299,11 +304,11 @@ hr {
 
 @media screen and (min-width: 768px) {
 
-   
+
 
     .menu {
         width: 467px;
-        
+
     }
 
     .menu label {
@@ -318,7 +323,7 @@ hr {
 
     .menu nav {
         display: block;
-        
+
     }
 
     .menu li a:hover {
@@ -418,8 +423,8 @@ hr {
 
 @media screen and (min-width: 1280px) {
 
-   header {
-      padding: 38px 160px;
-   }
+    header {
+        padding: 38px 160px;
+    }
 
 }

@@ -16,7 +16,7 @@
 body {
    background-color: var(--background-primary-color);
    color: var(--text-color);
-   font-family: sans-serif;
+   font-family: 'Times New Roman', Times, serif;
 
 }
 
@@ -67,8 +67,8 @@ nav {
 }
 
 .active {
-    color: var(--color-three);
-    text-decoration: underline;
+   color: var(--color-three);
+   text-decoration: underline;
 }
 
 .title {
@@ -94,22 +94,22 @@ hr {
 
 @media screen and (min-width: 768px) {
 
-  
+
 
    .menu {
-        width: 467px;
-      
-    }
+      width: 467px;
 
-    .menu label {
-        display: none;
-    }
+   }
 
-    .menu ul {
-        display: flex;
-        align-items: center;
-        gap: 50px;
-    }
+   .menu label {
+      display: none;
+   }
+
+   .menu ul {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+   }
 
    .menu nav {
       display: block;
@@ -119,11 +119,11 @@ hr {
       color: var(--color-three);
 
    }
-   
-    .list-nav li {
-        list-style: none;
-        margin: 16px 0;
-    }
+
+   .list-nav li {
+      list-style: none;
+      margin: 16px 0;
+   }
 }
 
 @media screen and (min-width: 1280px) {

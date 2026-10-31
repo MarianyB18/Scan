@@ -16,7 +16,7 @@
 body {
    background-color: var(--background-primary-color);
    color: var(--text-color);
-   font-family: sans-serif;
+   font-family: 'Times New Roman', Times, serif;
 
 }
 
@@ -193,7 +193,6 @@ hr {
 
 .des-prin {
    display: flex;
-   align-items: stretch;
    align-items: center;
    flex-direction: column;
    width: 100%;
@@ -249,9 +248,10 @@ hr {
 }
 
 .foo-des {
+   display: block;
    text-align: center;
    margin-top: auto;
-
+   padding-bottom: 30px;
 
 }
 
@@ -486,7 +486,7 @@ hr {
 
    .menu {
       width: 467px;
-    
+
    }
 
    .menu label {
@@ -508,11 +508,11 @@ hr {
 
    }
 
-  
-    .list-nav li {
-        list-style: none;
-        margin: 16px 0;
-    }
+
+   .list-nav li {
+      list-style: none;
+      margin: 16px 0;
+   }
 
    .hero-img {
       min-height: 500;
@@ -554,7 +554,7 @@ hr {
       display: block;
       max-width: 600px;
       width: 90%;
-     
+
       max-height: 920px;
       background-color: var(--color-three);
       margin-top: 20px;
@@ -624,9 +624,9 @@ hr {
       font-weight: 700;
    }
 
-   .h-cal{
-   margin-top: 20px;
-  }
+   .h-cal {
+      margin-top: 20px;
+   }
 
 
 }
@@ -677,9 +677,9 @@ hr {
       height: 400px;
    }
 
-  .h-cal{
-   margin-top: 20px;
-  }
+   .h-cal {
+      margin-top: 20px;
+   }
 }
 
 
@@ -696,7 +696,7 @@ hr {
       height: 300px;
    }
 
-    .des-prin {
+   .des-prin {
       display: flex;
       justify-content: center;
       flex-direction: row;
@@ -717,7 +717,7 @@ hr {
       border-radius: 14px;
    }
 
-  
+
    .hea-des h4 {
       margin-top: 10px;
       text-align: center;
@@ -737,7 +737,7 @@ hr {
       font-weight: 700;
    }
 
-   .foo-des{
+   .foo-des {
       margin-top: auto;
    }
 
@@ -755,11 +755,13 @@ hr {
 
    }
 
-   .image-log{
+   .image-log {
       height: 520px;
    }
-   
-   .image-bi , .image-cal, .image-cont {
+
+   .image-bi,
+   .image-cal,
+   .image-cont {
       height: 400px;
    }
 
